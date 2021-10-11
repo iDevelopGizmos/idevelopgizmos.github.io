@@ -1,0 +1,118 @@
+// ! GLOBALS
+
+@import "./global";
+
+// ! PAGE STYLES
+
+// ? Home Section
+.home {
+    // Push Items To Edges
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+
+    // ? Main Home Title & Paragraph
+    .home-text {
+        // Take Half Of The Container
+        width: 50%;
+
+        // ? Home Title
+        h1 {
+            // Enlarge Fonts and Push Down Home Paragraph
+            margin-bottom: 2rem;
+            font-size: 3rem;
+        }
+
+        // ? Title Names
+        .name {
+            // Set Font Color, Weight and Size
+            font-size: 3rem;
+            font-weight: 700;
+            color: $primaryColor;
+        }
+
+        // ? Home Paragraph
+        p {
+            // Change font-family, styles and Fix Width
+            max-width: 450px;
+            font-family: "Roboto", sans-serif;
+            font-size: 1.125rem;
+            line-height: 1.5;
+            margin-bottom: 2rem;
+        }
+
+        // ? Emphasized Text
+        .strong {
+            // Set font-family and Weight
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+        }
+    }
+
+    // ? Main Home Banner
+    .home-banner {
+        // ? Set Width To Almost Half Of Container
+        width: 40%;
+
+        // ? Banner Image
+        img {
+            // Set Width To Take The Entire Container
+            width: 100%;
+        }
+    }
+}
+
+// ! TABLET VIEW
+
+@media (max-width: 768px) {
+    // ? Home Section
+    .home {
+        // Set Items To Be Listed Vertically
+        flex-direction: column;
+
+        // ? Main Home Title & Paragraph
+        .home-text {
+            // Set Container To Take Entire Container
+            width: 100%;
+            order: 2;
+
+            // ? Home Paragraph
+            p {
+                // Extent Paragraph Width
+                max-width: 550px;
+            }
+        }
+
+        // ? Main Home Banner
+        .home-banner {
+            // Set Banner To Be The First Item and Take Entire Container
+            width: 100%;
+            margin-bottom: 4rem;
+            order: 1;
+        }
+    }
+}
+
+// ! MOBILE VIEW
+
+@media (max-width: 425px) {
+    // ? Call To Action Button
+    .call-to-action {
+        // Center Button
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+// ? Scroll Down Icon
+.scroll-down-icon {
+    // Set Width and Center Icon
+    width: 75px;
+    margin: 0 auto;
+
+    // ? Icon
+    img {
+        // Set Width To Take The Entire Container
+        width: 100%;
+    }
+}

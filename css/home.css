@@ -1,0 +1,65 @@
+.home {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.home .home-text {
+  width: 50%;
+}
+.home .home-text h1 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+.home .home-text .name {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2671d9;
+}
+.home .home-text p {
+  max-width: 450px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+.home .home-text .strong {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.home .home-banner {
+  width: 40%;
+}
+.home .home-banner img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+  }
+  .home .home-text {
+    width: 100%;
+    order: 2;
+  }
+  .home .home-text p {
+    max-width: 550px;
+  }
+  .home .home-banner {
+    width: 100%;
+    margin-bottom: 4rem;
+    order: 1;
+  }
+}
+@media (max-width: 425px) {
+  .call-to-action {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.scroll-down-icon {
+  width: 75px;
+  margin: 0 auto;
+}
+.scroll-down-icon img {
+  width: 100%;
+}/*# sourceMappingURL=home.css.map */
