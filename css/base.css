@@ -13,4 +13,66 @@
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.main-header {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header .global-home-link {
+  color: #333;
+  text-decoration: none;
+}
+.main-header .main-branding {
+  display: flex;
+  align-items: center;
+}
+.main-header .main-branding h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.main-header .main-branding img {
+  margin-right: 1rem;
+  width: 100px;
+  border-radius: 50%;
+}
+.main-header .main-navbar ul {
+  display: flex;
+}
+.main-header .main-navbar li {
+  margin-left: 2rem;
+  list-style: none;
+}
+.main-header .main-navbar .nav-link {
+  color: #333;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+.main-header .main-navbar .nav-link:hover {
+  color: #2671d9;
+}
+.main-header .main-navbar .nav-link:active {
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+  }
+  .main-header .main-navbar li {
+    margin: 0 1rem;
+  }
+}
+@media (max-width: 425px) {
+  .main-navbar ul {
+    flex-direction: column;
+  }
+  .main-navbar li {
+    margin: 2rem 0;
+    text-align: center;
+  }
 }/*# sourceMappingURL=base.css.map */

@@ -1,4 +1,5 @@
 // ! GOOGLE FONTS
+
 @import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400;500;700&family=Roboto&display=swap");
 
 // ! GLOBALS
@@ -28,4 +29,116 @@
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+// ! PAGE STYLES
+
+// ? Main Page Header
+.main-header {
+    // Push Branding and Links To Edge
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // ? Global Home Link
+    .global-home-link {
+        color: $primaryTextColor;
+        text-decoration: none;
+    }
+
+    // ? Main Branding (Logo)
+    .main-branding {
+        // Align Logo and Text
+        display: flex;
+        align-items: center;
+
+        // ? Logo Text
+        h1 {
+            // Make Logo Large and Bold
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        // ? Logo
+        img {
+            // Set Logo To Be 100px and Round
+            margin-right: 1rem;
+            width: 100px;
+            border-radius: 50%;
+        }
+    }
+
+    // ? Main Navbar
+    .main-navbar {
+        // ? Navbar Links
+        ul {
+            // Set Links To Be Listed Horizontally
+            display: flex;
+        }
+
+        // ? Navbar Link
+        li {
+            // Space Out Links and Have No Decoration
+            margin-left: 2rem;
+            list-style: none;
+        }
+
+        // ? Navbar Link (anchor)
+        .nav-link {
+            // Set Link Color and Have No Decoration
+            color: $primaryTextColor;
+            font-size: 1.15rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.1s ease;
+        }
+
+        .nav-link:hover {
+            color: $primaryColor;
+        }
+
+        .nav-link:active {
+            font-weight: 400;
+        }
+    }
+}
+
+// ! TABLET VIEW
+
+@media (max-width: 768px) {
+    // ? Main Page Header
+    .main-header {
+        // Set Items To Be Listed Vertically
+        flex-direction: column;
+
+        // ? Main Navbar
+        .main-navbar {
+            // ? Navbar Link
+            li {
+                // Have Equal Margins On Sides
+                margin: 0 1rem;
+            }
+        }
+    }
+}
+
+// ! MOBILE VIEW
+
+@media (max-width: 425px) {
+    // ? Main Navbar
+    .main-navbar {
+        // ? Navbar Links
+        ul {
+            // Set Links To Be listed Vertically
+            flex-direction: column;
+        }
+
+        // ? Navbar Link
+        li {
+            // Set Links To Be Center Aligned and Spaced Out
+            margin: 2rem 0;
+            text-align: center;
+        }
+    }
 }
