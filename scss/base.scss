@@ -31,6 +31,29 @@
     margin: 0 auto;
 }
 
+// ? Button
+.button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: $secondaryTextColor;
+    background: $primaryColor;
+    border: none;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease;
+}
+
+.button:hover {
+    box-shadow: 0 0 0.5rem $primaryColor;
+    transform: scale(1.1);
+}
+
+.button:active {
+    transform: scale(0.9);
+}
+
 // ! PAGE STYLES
 
 // ? Main Page Header
