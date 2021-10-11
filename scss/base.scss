@@ -1,0 +1,31 @@
+// ! GOOGLE FONTS
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400;500;700&family=Roboto&display=swap");
+
+// ! GLOBALS
+
+@import "./global";
+
+// ! DEFAULTS
+
+* {
+    // CSS Box-Model Resets
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    // Font Resets
+    font-family: "Gemunu Libre", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+// ! COMPONENTS
+
+// ? Global Container
+.global-container {
+    // Set Width To Be 90% Of Screen, 1440px At Max and Centered
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}

@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400;500;700&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gemunu Libre", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.global-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}/*# sourceMappingURL=base.css.map */
